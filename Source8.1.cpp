@@ -1,16 +1,17 @@
 #include <iostream>
 
-static int i{0};
-
 void counting_function()
 {
-    std::cout << "Количество вызовов функции counting_function(): " << i << std::endl;
+    static int value{0};
+    std::cout << "Количество вызовов функции counting_function(): " << value++ << std::endl;
 }
 
 int main(int argc, char** argv)
 {
-    for (i = 0; i < 15; i++)
+    for (int i = 0; i < 15; i++)
     {
         counting_function();
     }
+
+    return 0;
 }
