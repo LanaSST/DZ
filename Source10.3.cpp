@@ -8,8 +8,7 @@ int** create_two_dim_array(int rows, int cols)
     int ** arr = new int*[rows]();
     for(int i = 0; i < rows; ++i)
     {
-        int * col = new int[cols]();
-        arr[i] = col;
+        arr[i] = new int[cols]();
     }
     return arr;
 }
