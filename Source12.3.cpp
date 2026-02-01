@@ -6,7 +6,7 @@ int main()
 {
     std::ofstream ofile{"out.txt"};
 
-    int * arr;
+    int * arr{nullptr};
     int size{};
 
     std::cout << "Введите размер массива: ";
@@ -37,4 +37,5 @@ int main()
     }
 
     return 0;
+
 }
