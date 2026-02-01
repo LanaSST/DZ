@@ -6,7 +6,7 @@ int main()
 {
     std::ifstream ifile{"in.txt"};
 
-    int * arr;
+    int * arr{nullptr};
     int size{};
 
     if(ifile.is_open())
@@ -34,4 +34,5 @@ int main()
 
     delete[] arr;
     return 0;
+
 }
