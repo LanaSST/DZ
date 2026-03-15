@@ -4,7 +4,7 @@ int main()
 {
     struct Account
     {
-        int nNumber{0};
+        int nNumber{};
         std::string strName;
         double dBalance{};
 
