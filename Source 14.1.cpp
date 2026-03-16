@@ -1,6 +1,6 @@
 #include <iostream>
 
-enum En_Mouth {exit_, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec};
+enum En_Mouth {jan = 1, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec};
 
 int main()
 {
@@ -50,7 +50,7 @@ int main()
             case  dec: 
                 std::cout << "Декабрь" << std::endl;
                 break;       
-            case exit_ :
+            case 0 :
                 std::cout << "До свидания" << std::endl;
                 break;                                                                                             
             default:
@@ -58,7 +58,7 @@ int main()
                 break;
         }
     }
-    while (mouth != exit_);
+    while (mouth != 0);
 
     return 0;
 }
