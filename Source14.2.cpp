@@ -1,24 +1,24 @@
 #include <iostream>
 
-int main()
-{
     struct Account
     {
         int nNumber{};
         std::string strName;
         double dBalance{};
-
-        void setNewBalance(Account & acc, double dNewBalance)
-        {
-            acc.dBalance = dNewBalance;
-        }
-
-        void print()
-        {
-            std::cout << "Ваш счёт: " << strName << ", " << nNumber << ", " << dBalance << std::endl;
-        }
     };
 
+    void setNewBalance(Account & acc, double dNewBalance)
+    {
+        acc.dBalance = dNewBalance;
+    }
+
+    void print(const Account & acc)
+    {
+        std::cout << "Ваш счёт: " << acc.strName << ", " <<acc.nNumber << ", " << acc.dBalance << std::endl;
+    }
+
+int main()
+{
     Account acc;
     double dNewBalance{};
     std::cout << "Введите номер счёта: ";
@@ -32,8 +32,8 @@ int main()
     std::cout << "Введите новый баланс: ";
     std::cin >> dNewBalance;
     std::cout << std::endl;
-    acc.setNewBalance(acc, dNewBalance);
-    acc.print();
+    setNewBalance(acc, dNewBalance);
+    print(acc);
 
     return 0;
 }
