@@ -10,7 +10,6 @@ private:
     int nFlat{};
 
 public:
-    Address() = default;
     Address(std::string_view strTown_, std::string_view strStreet_, int nHouse_, int nFlat_)
         : strTown(strTown_), strStreet(strStreet_), nHouse(nHouse_), nFlat(nFlat_)
     {};
