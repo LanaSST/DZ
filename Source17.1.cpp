@@ -44,7 +44,7 @@ int main()
 
     std::cout << "Количество сторон:" << std::endl;
     std::cout << figure.getName() << ": " << figure.getCountSide() << std::endl;
-    std::cout << triangle.getName() << "Треугольник: " << triangle.getCountSide() << std::endl;
+    std::cout << triangle.getName() << ": " << triangle.getCountSide() << std::endl;
     std::cout << quadrangle.getName() << ": " << quadrangle.getCountSide() << std::endl;
     return 0;
 }
