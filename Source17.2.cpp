@@ -136,6 +136,7 @@ void print_info(Figure * figure)
         figure->print();
     else
         std::cout << "invalid figure" << std::endl;    
+    std::cout << std::endl;
 }
 
 
@@ -152,21 +153,13 @@ int main()
     Rhomb rhomb{30, 30, 40};
 
     print_info(&triangle);
-    std::cout << std::endl;
     print_info(&rightAngledTriangle);
-    std::cout << std::endl;
     print_info(&isoscelesTriangle);
-    std::cout << std::endl;
     print_info(&equilateralTriangle);
-    std::cout << std::endl;
     print_info(&quadrangle);
-    std::cout << std::endl;
     print_info(&rectangle);
-    std::cout << std::endl;
     print_info(&square);
-    std::cout << std::endl;
     print_info(&parallelogram);
-    std::cout << std::endl;
     print_info(&rhomb);
 
     return 0;
