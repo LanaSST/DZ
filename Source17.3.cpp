@@ -189,7 +189,6 @@ void print_info(Figure * figure)
         std::cout << "invalid figure" << std::endl;    
 }
 
-
 int main()
 {
     Figure figure{};
@@ -203,25 +202,25 @@ int main()
     Parallelogram parallelogram{20, 30, 30, 40};
     Rhomb rhomb{30, 30, 40};
 
-    figure.print();
+    print_info(&figure);
     std::cout << std::endl;
-    triangle.print();
+    print_info(&triangle);
     std::cout << std::endl;
-    rightAngledTriangle.print();
+    print_info(&rightAngledTriangle);
     std::cout << std::endl;
-    isoscelesTriangle.print();
+    print_info(&isoscelesTriangle);
     std::cout << std::endl;
-    equilateralTriangle.print();
+    print_info(&equilateralTriangle);
     std::cout << std::endl;
-    quadrangle.print();
+    print_info(&quadrangle);
     std::cout << std::endl;
-    rectangle.print();
+    print_info(&rectangle);
     std::cout << std::endl;
-    square.print();
+    print_info(&square);
     std::cout << std::endl;
-    parallelogram.print();
+    print_info(&parallelogram);
     std::cout << std::endl;
-    rhomb.print();
+    print_info(&rhomb);
 
     return 0;
 }
