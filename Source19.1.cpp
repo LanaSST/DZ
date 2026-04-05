@@ -1,7 +1,6 @@
 #include <iostream>
 
 #define MODE 1
-
 #ifndef MODE
 #error Режим не определен
 #elif MODE == 1
